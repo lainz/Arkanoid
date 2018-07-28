@@ -1,0 +1,39 @@
+object frmMain: TfrmMain
+  Cursor = crNone
+  Left = 354
+  Height = 480
+  Top = 146
+  Width = 640
+  BorderStyle = bsDialog
+  Caption = 'Arkanoid'
+  ClientHeight = 480
+  ClientWidth = 640
+  Color = clWhite
+  Constraints.MaxHeight = 480
+  Constraints.MaxWidth = 640
+  Constraints.MinHeight = 480
+  Constraints.MinWidth = 640
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.8.4.0'
+  object BGRAVirtualScreen1: TBGRAVirtualScreen
+    Cursor = crNone
+    Left = 0
+    Height = 480
+    Top = 0
+    Width = 640
+    OnRedraw = BGRAVirtualScreen1Redraw
+    Align = alClient
+    Alignment = taLeftJustify
+    Color = clSilver
+    ParentColor = False
+    TabOrder = 0
+  end
+  object Timer1: TTimer
+    Interval = 15
+    OnTimer = Timer1Timer
+    left = 98
+    top = 96
+  end
+end
